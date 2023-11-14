@@ -19,24 +19,19 @@ class SecondViewController: UIViewController{
     
     let secondViewModel = SecondViewModel()
     
+    
     override func viewDidLoad(){
       super.viewDidLoad()
+        secondViewModel.delegate = self
         titleViewLabel.text = userNameValue
         birthLabel.text = "Date of birth:"
         passViewBtn.configuration?.title = "Send"
     }
-    
-    @IBAction func datePicked(_ sender: UIDatePicker) {
-     
-    }
-    
+
     @IBAction func navigateBtnTap(_ sender: UIButton) {
-        secondViewModel.delegate = self
         secondViewModel.validateDate(datePickerValue: datePickerValue.date)
-      
     }
 }
-
 
 
 extension SecondViewController: SecondViewModelDelegate {

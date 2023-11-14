@@ -14,11 +14,11 @@ protocol FirstViewModelDelegate: AnyObject{
 
 class FirstViewModel {
     
-    let userNameRegex = UserNameRegex()
-    
     weak var delegate: FirstViewModelDelegate?
     
     func userNameValidation(userName: String?){
+        
+        let userNameRegex = UserNameRegex()
         let result = userName?.range(of: userNameRegex.userNamePattern, options: .regularExpression)
         
         if result != nil {

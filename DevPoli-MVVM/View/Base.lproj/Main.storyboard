@@ -89,9 +89,6 @@
                                 <date key="maximumDate" timeIntervalSinceReferenceDate="1167562800">
                                     <!--2037-12-31 11:00:00 +0000-->
                                 </date>
-                                <connections>
-                                    <action selector="datePicked:" destination="bnG-ZG-rTX" eventType="valueChanged" id="WLS-8d-XRe"/>
-                                </connections>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iD4-gW-nRZ">
                                 <rect key="frame" x="175.66666666666666" y="415.66666666666669" width="42" height="21"/>

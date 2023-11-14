@@ -14,16 +14,14 @@ protocol SecondViewModelDelegate: AnyObject{
 
 class SecondViewModel {
     
-    private var years: Int = 0
-    private let calender = Calendar.current
-    private let date = Date()
-
     weak var delegate: SecondViewModelDelegate?
     
     func validateDate(datePickerValue: Date){
-        
+    
+        let date = Date()
+        let calender = Calendar.current
         let ageComponent = calender.dateComponents([.year], from: datePickerValue, to: date)
-        years = ageComponent.year!
+        let years = ageComponent.year!
              
         if years >= 1 {
             delegate?.navigationNextView(date: years)
