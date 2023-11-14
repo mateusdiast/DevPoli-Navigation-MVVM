@@ -3,4 +3,222 @@
    uuid = "65F89341-E0D2-4EDA-BBF0-0EDAE5E830DC"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "91CA6293-F240-4B9B-9F45-524518354214"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DevPoli-MVVM/View/ThirdViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "ThirdViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "91CA6293-F240-4B9B-9F45-524518354214 - 9a9805b8d5719adf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DevPoli_MVVM.ThirdViewController.userDateValue.getter : Swift.Int"
+                  moduleName = "DevPoli-MVVM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mateusdias/Desktop/Projects/DevPoli-MVVM/DevPoli-MVVM/View/ThirdViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "91CA6293-F240-4B9B-9F45-524518354214 - 3eb8d7386a1e7cc2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DevPoli_MVVM.ThirdViewController.userDateValue.setter : Swift.Int"
+                  moduleName = "DevPoli-MVVM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mateusdias/Desktop/Projects/DevPoli-MVVM/DevPoli-MVVM/View/ThirdViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "91CA6293-F240-4B9B-9F45-524518354214 - 547aa17c4cf80f15"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DevPoli_MVVM.ThirdViewController.userDateValue.modify : Swift.Int"
+                  moduleName = "DevPoli-MVVM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mateusdias/Desktop/Projects/DevPoli-MVVM/DevPoli-MVVM/View/ThirdViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "91CA6293-F240-4B9B-9F45-524518354214 - 748f148df58fbfbf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DevPoli_MVVM.ThirdViewController.userDateValue.modify : Swift.Int with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "DevPoli-MVVM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mateusdias/Desktop/Projects/DevPoli-MVVM/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "91CA6293-F240-4B9B-9F45-524518354214 - 7577cb8041e24e02"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DevPoli_MVVM.ThirdViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; DevPoli_MVVM.ThirdViewController"
+                  moduleName = "DevPoli-MVVM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mateusdias/Desktop/Projects/DevPoli-MVVM/DevPoli-MVVM/View/ThirdViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "184">
+               </Location>
+               <Location
+                  uuid = "91CA6293-F240-4B9B-9F45-524518354214 - 5f924e9d8f931325"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DevPoli_MVVM.ThirdViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;DevPoli_MVVM.ThirdViewController&gt;"
+                  moduleName = "DevPoli-MVVM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mateusdias/Desktop/Projects/DevPoli-MVVM/DevPoli-MVVM/View/ThirdViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "160">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6E819DDE-5B09-4243-A3A9-4E282BEDC18E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DevPoli-MVVM/View/ThirdViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "ThirdViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "6E819DDE-5B09-4243-A3A9-4E282BEDC18E - 727b36c287f4784d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DevPoli_MVVM.ThirdViewController.userNameValue.getter : Swift.String"
+                  moduleName = "DevPoli-MVVM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mateusdias/Desktop/Projects/DevPoli-MVVM/DevPoli-MVVM/View/ThirdViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "6E819DDE-5B09-4243-A3A9-4E282BEDC18E - ea952a5d884c4aa9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DevPoli_MVVM.ThirdViewController.userNameValue.setter : Swift.String"
+                  moduleName = "DevPoli-MVVM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mateusdias/Desktop/Projects/DevPoli-MVVM/DevPoli-MVVM/View/ThirdViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "6E819DDE-5B09-4243-A3A9-4E282BEDC18E - 5abd738d3c966da8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DevPoli_MVVM.ThirdViewController.userNameValue.modify : Swift.String"
+                  moduleName = "DevPoli-MVVM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mateusdias/Desktop/Projects/DevPoli-MVVM/DevPoli-MVVM/View/ThirdViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "6E819DDE-5B09-4243-A3A9-4E282BEDC18E - 3a1010c3b057fa62"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DevPoli_MVVM.ThirdViewController.userNameValue.modify : Swift.String with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "DevPoli-MVVM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mateusdias/Desktop/Projects/DevPoli-MVVM/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "6E819DDE-5B09-4243-A3A9-4E282BEDC18E - 7577cb8041e24e23"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DevPoli_MVVM.ThirdViewController.init(nibName: Swift.Optional&lt;Swift.String&gt;, bundle: Swift.Optional&lt;__C.NSBundle&gt;) -&gt; DevPoli_MVVM.ThirdViewController"
+                  moduleName = "DevPoli-MVVM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mateusdias/Desktop/Projects/DevPoli-MVVM/DevPoli-MVVM/View/ThirdViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "216">
+               </Location>
+               <Location
+                  uuid = "6E819DDE-5B09-4243-A3A9-4E282BEDC18E - 5f924e9d8f931304"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DevPoli_MVVM.ThirdViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;DevPoli_MVVM.ThirdViewController&gt;"
+                  moduleName = "DevPoli-MVVM"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mateusdias/Desktop/Projects/DevPoli-MVVM/DevPoli-MVVM/View/ThirdViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "192">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

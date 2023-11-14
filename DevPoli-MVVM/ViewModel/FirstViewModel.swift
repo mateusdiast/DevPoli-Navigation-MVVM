@@ -8,17 +8,24 @@
 import Foundation
 
 protocol FirstViewModelDelegate: AnyObject{
-    func getNameOfTheView(nameOfTheView: String)
+    func validateResult()
+    func navigationNextView()
 }
 
 class FirstViewModel {
-  
-    let nameOfTheView = NameViewsModel()
+    
+    let userNameRegex = UserNameRegex()
     
     weak var delegate: FirstViewModelDelegate?
-      
-    func onLoad(){
-        delegate?.getNameOfTheView(nameOfTheView: nameOfTheView.firstViewName)
+    
+    func userNameValidation(userName: String?){
+        let result = userName?.range(of: userNameRegex.userNamePattern, options: .regularExpression)
+        
+        if result != nil {
+            delegate?.navigationNextView()
+        }else{
+            delegate?.validateResult()
+        }
     }
 
     

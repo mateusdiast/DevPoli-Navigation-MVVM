@@ -12,26 +12,48 @@ class SecondViewController: UIViewController{
     
     @IBOutlet weak var passViewBtn: UIButton!
     @IBOutlet weak var titleViewLabel: UILabel!
+    @IBOutlet weak var birthLabel: UILabel!
+    @IBOutlet weak var datePickerValue: UIDatePicker!
     
+    var userNameValue: String = ""
+    
+    let secondViewModel = SecondViewModel()
     
     override func viewDidLoad(){
       super.viewDidLoad()
-        let secondViewModel = SecondViewModel()
-        secondViewModel.delegate = self
-        secondViewModel.onLoad()
-        passViewBtn.configuration?.title = "To navigate"
-        
+        titleViewLabel.text = userNameValue
+        birthLabel.text = "Date of birth:"
+        passViewBtn.configuration?.title = "Send"
+    }
+    
+    @IBAction func datePicked(_ sender: UIDatePicker) {
+     
     }
     
     @IBAction func navigateBtnTap(_ sender: UIButton) {
-        guard let destinationVc = storyboard?.instantiateViewController(identifier: "goToThirdView") else {return}
-        navigationController?.pushViewController(destinationVc, animated: true)
+        secondViewModel.delegate = self
+        secondViewModel.validateDate(datePickerValue: datePickerValue.date)
+      
     }
 }
 
+
+
 extension SecondViewController: SecondViewModelDelegate {
-    func getNameOfTheView(nameOfTheView: String) {
-        titleViewLabel.text = nameOfTheView
+    
+    func validateResult() {
+        let alertDateIsInvalidate = UIAlertController(title: "Error", message: "Type a valid date", preferredStyle: UIAlertController.Style.alert)
+        alertDateIsInvalidate.addAction(UIAlertAction(title: "Try Again", style: UIAlertAction.Style.default, handler: nil))
+        self.present(alertDateIsInvalidate, animated: true, completion: nil)
+        
+    }
+    
+    func navigationNextView(date: Int) {
+        guard let destinationVc = storyboard?.instantiateViewController(identifier: "goToThirdView") as? ThirdViewController else {return}
+        destinationVc.userDateValue = date
+        destinationVc.userNameValue = userNameValue
+        navigationController?.pushViewController(destinationVc, animated: true)
+
     }
 }
   

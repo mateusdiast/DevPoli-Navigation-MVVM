@@ -10,15 +10,17 @@ import UIKit
 class ThirdViewController: UIViewController {
     
     @IBOutlet weak var passViewBtn: UIButton!
-    @IBOutlet weak var titleViewLabel: UILabel!
+    @IBOutlet weak var nameValueLabel: UILabel!
+    @IBOutlet weak var dateValueLabel: UILabel!
     
+    var userDateValue: Int = 0
+    var userNameValue: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let thirdViewModal = ThirdViewModel()
-        thirdViewModal.delegate = self
-        thirdViewModal.onLoad()
-        passViewBtn.configuration?.title = "Return to first view"
+        nameValueLabel.text = "Name: \(userNameValue)"
+        dateValueLabel.text = "Age: \(userDateValue) Years"
+        passViewBtn.configuration?.title =  "SEND ANOTHER USER"
     }
     
     @IBAction func navigateBtnTap(_ sender: UIButton){
@@ -26,10 +28,3 @@ class ThirdViewController: UIViewController {
         }
     }
     
-
-
-extension ThirdViewController: ThirdViewModelDelegate {
-    func getNameOfTheView(nameOfTheView: String) {
-        titleViewLabel.text = nameOfTheView
-    }
-}

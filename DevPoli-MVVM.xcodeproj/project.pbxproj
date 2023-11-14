@@ -14,11 +14,10 @@
 		E53BA7FD2AF42F9500849C0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E53BA7FC2AF42F9500849C0B /* Assets.xcassets */; };
 		E53BA8002AF42F9500849C0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E53BA7FE2AF42F9500849C0B /* LaunchScreen.storyboard */; };
 		E53BA80A2AF4363D00849C0B /* FirstViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53BA8092AF4363D00849C0B /* FirstViewModel.swift */; };
-		E53BA80C2AF436CE00849C0B /* NameViewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53BA80B2AF436CE00849C0B /* NameViewsModel.swift */; };
 		E53BA8112AF5ABBE00849C0B /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53BA8102AF5ABBE00849C0B /* SecondViewController.swift */; };
 		E53BA8132AF5B8B000849C0B /* SecondViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53BA8122AF5B8B000849C0B /* SecondViewModel.swift */; };
 		E53BA8152AF5BE9100849C0B /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53BA8142AF5BE9100849C0B /* ThirdViewController.swift */; };
-		E53BA8172AF5BF8E00849C0B /* ThirdViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53BA8162AF5BF8E00849C0B /* ThirdViewModel.swift */; };
+		E5B1AA7C2AFFD26B007A4B4D /* UserNameRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5B1AA7B2AFFD26B007A4B4D /* UserNameRegex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,11 +30,10 @@
 		E53BA7FF2AF42F9500849C0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E53BA8012AF42F9500849C0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E53BA8092AF4363D00849C0B /* FirstViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewModel.swift; sourceTree = "<group>"; };
-		E53BA80B2AF436CE00849C0B /* NameViewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameViewsModel.swift; sourceTree = "<group>"; };
 		E53BA8102AF5ABBE00849C0B /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		E53BA8122AF5B8B000849C0B /* SecondViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewModel.swift; sourceTree = "<group>"; };
 		E53BA8142AF5BE9100849C0B /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
-		E53BA8162AF5BF8E00849C0B /* ThirdViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewModel.swift; sourceTree = "<group>"; };
+		E5B1AA7B2AFFD26B007A4B4D /* UserNameRegex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNameRegex.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +92,7 @@
 		E53BA80E2AF5AB6600849C0B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E53BA80B2AF436CE00849C0B /* NameViewsModel.swift */,
+				E5B1AA7B2AFFD26B007A4B4D /* UserNameRegex.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -104,7 +102,6 @@
 			children = (
 				E53BA8092AF4363D00849C0B /* FirstViewModel.swift */,
 				E53BA8122AF5B8B000849C0B /* SecondViewModel.swift */,
-				E53BA8162AF5BF8E00849C0B /* ThirdViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -183,10 +180,9 @@
 				E53BA8132AF5B8B000849C0B /* SecondViewModel.swift in Sources */,
 				E53BA8112AF5ABBE00849C0B /* SecondViewController.swift in Sources */,
 				E53BA7F82AF42F9300849C0B /* FirstViewController.swift in Sources */,
-				E53BA8172AF5BF8E00849C0B /* ThirdViewModel.swift in Sources */,
 				E53BA80A2AF4363D00849C0B /* FirstViewModel.swift in Sources */,
-				E53BA80C2AF436CE00849C0B /* NameViewsModel.swift in Sources */,
 				E53BA7F42AF42F9300849C0B /* AppDelegate.swift in Sources */,
+				E5B1AA7C2AFFD26B007A4B4D /* UserNameRegex.swift in Sources */,
 				E53BA8152AF5BE9100849C0B /* ThirdViewController.swift in Sources */,
 				E53BA7F62AF42F9300849C0B /* SceneDelegate.swift in Sources */,
 			);

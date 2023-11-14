@@ -8,18 +8,31 @@
 import Foundation
 
 protocol SecondViewModelDelegate: AnyObject{
-    func getNameOfTheView(nameOfTheView: String)
+    func navigationNextView(date: Int)
+    func validateResult()
 }
 
 class SecondViewModel {
     
-    let nameOfTheView = NameViewsModel()
-    
+    private var years: Int = 0
+    private let calender = Calendar.current
+    private let date = Date()
+
     weak var delegate: SecondViewModelDelegate?
     
-    func onLoad() {
-        delegate?.getNameOfTheView(nameOfTheView: nameOfTheView.secondViewName)
+    func validateDate(datePickerValue: Date){
+        
+        let ageComponent = calender.dateComponents([.year], from: datePickerValue, to: date)
+        years = ageComponent.year!
+             
+        if years >= 1 {
+            delegate?.navigationNextView(date: years)
+        }else{
+            delegate?.validateResult()
+        }
     }
     
     
 }
+
+
