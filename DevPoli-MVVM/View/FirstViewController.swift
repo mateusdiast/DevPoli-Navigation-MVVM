@@ -13,12 +13,13 @@ class FirstViewController: UIViewController {
     @IBOutlet weak var passViewBtn: UIButton!
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var titleLabel: UILabel!
-    
+      
     
     let firstViewModel = FirstViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        firstViewModel.delegate = self
         passViewBtn.configuration?.title = "SEND"
         userNameTextField.placeholder = "Ex: Mateus Martins"
         titleLabel.text = "Type your full name:"
@@ -26,8 +27,15 @@ class FirstViewController: UIViewController {
     
     
     @IBAction func navigateBtnTap(_ sender: UIButton) {
-        firstViewModel.delegate = self
         firstViewModel.userNameValidation(userName: userNameTextField.text)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let secondViewController = segue.destination as? SecondViewController {
+            secondViewController.userNameValue = userNameTextField.text!
+        }
+        
     }
 
 }
@@ -40,14 +48,10 @@ extension FirstViewController: FirstViewModelDelegate {
         alertNameIsInvalidate.addAction(UIAlertAction(title: "Type Again!", style: UIAlertAction.Style.default, handler: nil))
         self.present(alertNameIsInvalidate, animated: true, completion: nil)
         userNameTextField.text = ""
-        
     }
     
     func navigationNextView() {
-        guard let destinationVc = storyboard?.instantiateViewController(identifier: "goToSecondView") as? SecondViewController else {return}
-        guard let userNameValue = userNameTextField.text else {return}
-        destinationVc.userNameValue = userNameValue
-        navigationController?.pushViewController(destinationVc, animated: true)
+        performSegue(withIdentifier: "goToSecondView", sender: nil)
         userNameTextField.text = ""
     }
     

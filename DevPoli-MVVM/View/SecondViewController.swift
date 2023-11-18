@@ -16,7 +16,6 @@ class SecondViewController: UIViewController{
     @IBOutlet weak var datePickerValue: UIDatePicker!
     
     var userNameValue: String = ""
-    
     let secondViewModel = SecondViewModel()
     
     
@@ -31,6 +30,16 @@ class SecondViewController: UIViewController{
     @IBAction func navigateBtnTap(_ sender: UIButton) {
         secondViewModel.validateDate(datePickerValue: datePickerValue.date)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if 
+        let thirdViewController = segue.destination as? ThirdViewController ,
+        let date = sender as? Int
+        {
+            thirdViewController.userDateValue = date
+            thirdViewController.userNameValue = userNameValue
+        }
+    }
 }
 
 
@@ -44,11 +53,7 @@ extension SecondViewController: SecondViewModelDelegate {
     }
     
     func navigationNextView(date: Int) {
-        guard let destinationVc = storyboard?.instantiateViewController(identifier: "goToThirdView") as? ThirdViewController else {return}
-        destinationVc.userDateValue = date
-        destinationVc.userNameValue = userNameValue
-        navigationController?.pushViewController(destinationVc, animated: true)
-
+        performSegue(withIdentifier: "goToThirdView", sender: date)
     }
 }
   

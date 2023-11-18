@@ -70,6 +70,7 @@
                         <outlet property="passViewBtn" destination="3Tv-PE-4mR" id="sCK-xq-M4Z"/>
                         <outlet property="titleLabel" destination="oeP-RG-v7s" id="1zL-y0-JjJ"/>
                         <outlet property="userNameTextField" destination="nAl-4Z-09Z" id="8px-6m-caG"/>
+                        <segue destination="bnG-ZG-rTX" kind="show" identifier="goToSecondView" id="4W3-Rw-RNd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -133,16 +134,18 @@
                             <constraint firstItem="P3Q-Ij-5Gv" firstAttribute="leading" secondItem="3f8-Xh-bx8" secondAttribute="leading" constant="30" id="z9N-5Y-8RY"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="OW2-gO-HHS"/>
                     <connections>
                         <outlet property="birthLabel" destination="mJk-sG-UlA" id="83N-hN-VmQ"/>
                         <outlet property="datePickerValue" destination="hxZ-HP-BOX" id="n0D-Rr-8DR"/>
                         <outlet property="passViewBtn" destination="P3Q-Ij-5Gv" id="HkH-uL-GHM"/>
                         <outlet property="titleViewLabel" destination="iD4-gW-nRZ" id="Jsg-26-bbc"/>
+                        <segue destination="PjF-9a-39T" kind="show" identifier="goToThirdView" id="TfD-tN-rMw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tqb-jN-Qb7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2368.7022900763359" y="12.67605633802817"/>
+            <point key="canvasLocation" x="2473" y="216"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="zH6-gf-wgk">
@@ -195,6 +198,7 @@
                             <constraint firstItem="8Jn-uK-Szs" firstAttribute="centerX" secondItem="JxA-7E-Gax" secondAttribute="centerX" id="zaW-Xq-Lmk"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="KbU-uK-XmJ"/>
                     <connections>
                         <outlet property="dateValueLabel" destination="sAs-0A-uJp" id="vVD-OE-Jgj"/>
                         <outlet property="nameValueLabel" destination="8Jn-uK-Szs" id="8NE-DW-Z1l"/>
@@ -203,7 +207,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ue4-0J-7TP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3039" y="13"/>
+            <point key="canvasLocation" x="3285" y="-56"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qgo-qM-D2W">
